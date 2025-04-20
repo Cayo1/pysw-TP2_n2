@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es"> <!-- Especifica que el lenguaje de la página es español -->
+<head>
+  <meta charset="UTF-8"> <!-- Define la codificación de caracteres como UTF-8 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Asegura que la página sea responsiva -->
+  <title>Fuerza Bootstrap</title> <!-- Título de la página -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"> <!-- Importa Bootstrap desde un CDN -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"> <!-- Importa Font Awesome para los iconos -->
+  <link rel="stylesheet" href="css/style.css"> <!-- Enlace a la hoja de estilos personalizada -->
+</head>
+<body>
+  
+    <header>
+        <!-- Barra de navegación -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+              <img src="img/logo.jpg" alt="Fuerza Total" style="width: 60px; margin-right: 30px;"> <!-- Logo del gimnasio -->
+              <a class="navbar-brand" href="index.html">Fuerza Total</a> <!-- Nombre del gimnasio en la barra de navegación -->
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span> <!-- Icono para menú en pantallas pequeñas -->
+              </button>
+          
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                    <a class="nav-link active" href="index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a href="clases.html" class="nav-link dropdown-toggle" id="clasesDropdown" data-bs-toggle="dropdown" role="button" aria-expanded="false">clases</a>
+                    <!-- Menú desplegable para las clases -->
+                    <ul class="dropdown-menu" aria-labelledby="clasesDropdown">
+                      <li><a class="dropdown-item" href="clases.html">Musculación</a></li>
+                      <li><a class="dropdown-item" href="clases.html">CrossFit</a></li>
+                      <li><a class="dropdown-item" href="clases.html">Yoga</a></li>
+                      <li><a class="dropdown-item" href="clases.html">Spinning</a></li>
+                    </ul>
+                  </li>     
+                  <li class="nav-item"><a class="nav-link" href="entrenadores.html">Entrenadores</a></li> <!-- Enlace a la sección de entrenadores -->
+                  <li class="nav-item"><a class="nav-link" href="precios.html">Precios</a></li> <!-- Enlace a la sección de precios -->
+                  <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li> <!-- Enlace a la sección de contacto -->
+                  <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li> <!-- Enlace a la sección del blog -->
+                </ul>
+              </div>
+            </div>
+          </nav>
+      </header>      
+      
+      <!-- Sección hero con video de fondo -->
+      <section class="hero position-relative">
+        <video class="w-100" autoplay muted loop playsinline>
+          <source src="videos/gym.mp4" type="video/mp4">
+          Tu navegador no soporta videos HTML5.
+        </video>
+      
+        <div class="overlay position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center text-white text-center flex-column">
+          <h1 class="display-3 fw-bold mb-3 hero-title">Entrená con Fuerza Total</h1>
+          <p class="lead hero-subtitle">El mejor gimnasio para lograr tus objetivos</p>
+          <a href="clases.html" class="btn btn-warning mt-4 btn-hero">¡Conocé nuestras clases!</a>
+        </div>
+      </section>
+
+      <!-- Sección de clases destacadas -->
+      <section class="container py-5">
+        <h2 class="text-center mb-4">Clases Destacadas</h2>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4">
+            <div class="card clase-card h-100 shadow">
+              <img src="img/musculacion.jpg" class="card-img-top" alt="Musculación">
+              <div class="card-body">
+                <h5 class="card-title">Musculación</h5>
+                <p class="card-text">Fortalecé tu cuerpo con rutinas guiadas por expertos.</p>
+              </div>
+            </div>
+          </div>
+          <!-- Tarjetas de clases -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card clase-card h-100 shadow">
+              <img src="img/yoga.jpg" class="card-img-top" alt="Yoga">
+              <div class="card-body">
+                <h5 class="card-title">Yoga</h5>
+                <p class="card-text">Conectá mente y cuerpo con sesiones relajantes.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="card clase-card h-100 shadow">
+              <img src="img/crossfit.jpg" class="card-img-top" alt="CrossFit">
+              <div class="card-body">
+                <h5 class="card-title">CrossFit</h5>
+                <p class="card-text">Entrenamiento de alta intensidad para desafiar tus límites.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sección de clientes satisfechos con contador -->
+      <div class="container py-5 text-center">
+        <h2>Clientes satisfechos</h2>
+        <p>Hasta mil clientes satisfechos</p>
+        <div class="counter">
+          <span id="count">0</span> <!-- Contador animado -->
+        </div>
+      </div>
+
+      <!-- Sección de testimonios con carousel -->
+      <section class="container py-5">
+        <h2 class="text-center mb-4">Testimonios</h2>
+        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner text-center">
+            <!-- Items del carousel -->
+            <div class="carousel-item active">
+              <blockquote class="blockquote">
+                <p class="mb-4">"Entrenar en Fuerza Total cambió mi vida. Los profes están siempre atentos."</p>
+                <footer class="blockquote-footer">Lucía Méndez, 28 años</footer>
+              </blockquote>
+            </div>
+            <div class="carousel-item">
+              <blockquote class="blockquote">
+                <p class="mb-4">"El ambiente es increíble y siempre me siento motivado para volver."</p>
+                <footer class="blockquote-footer">Carlos Ríos, estudiante</footer>
+              </blockquote>
+            </div>
+            <div class="carousel-item">
+              <blockquote class="blockquote">
+                <p class="mb-4">"Me encantan las clases de spinning y yoga. ¡100% recomendado!"</p>
+                <footer class="blockquote-footer">María López, diseñadora gráfica</footer>
+              </blockquote>
+            </div>
+          </div>
+          <!-- Botones de control del carousel -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+          </button>
+        </div>
+      </section>
+      <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+      <script src="js/main.js"></script>
+      <!-- Footer con formulario de suscripción y mapa -->
+  <footer class="bg-dark text-white py-5">
+    <div class="container">
+        <h3 class="text-center mb-4">Suscribite a nuestro newsletter</h3>
+        <form id="newsletterForm" class="newsletter">
+          <label for="email">Suscribite al newsletter:</label>
+          <input type="email" id="email" name="email" required >
+          <button id="submitBtn" type="submit">Enviar</button>
+          <div id="newsletterSpinner" class="spinner-border text-primary ms-2 d-none" role="status" style="width: 1.5rem; height: 1.5rem;">
+            <span class="visually-hidden">Loading...</span>
+          </div>
+        </form>
+      <div class="mt-5">
+        <h4 class="mb-3 text-center">Ubicación</h4>
+        <div class="ratio ratio-16x9">
+            <!-- Mapa incrustado de Google Maps -->
+            <iframe src="https://www.google.com/maps/embed?pb=..." width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

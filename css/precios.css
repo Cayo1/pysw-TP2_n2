@@ -1,0 +1,107 @@
+/* Estilo de fondo de la página */
+body {
+    background-color: #f8f9fa;
+  }
+  
+  /* Títulos y secciones */
+  h2 {
+    color: #343a40;
+    font-size: 2rem;
+  }
+  
+  /* Tabla de precios */
+  table {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Cabecera de la tabla */
+  th {
+    background-color: #007bff;
+    color: #ffffff;
+    text-align: center;
+  }
+  
+  /* Fila de precios */
+  tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  /* Estilo de la celda precio */
+  td.precio {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #28a745;
+    transition: opacity 0.3s;
+  }
+  
+  /* Estilo para los iconos de check y x */
+  i {
+    font-size: 1.5rem;
+  }
+  
+  /* Borde y color de las celdas de iconos */
+  td i.text-success {
+    color: #28a745;
+  }
+  
+  td i.text-danger {
+    color: #dc3545;
+  }
+  
+  /* Efecto de resaltar el plan seleccionado */
+  .highlight {
+    background-color: #fff3cd !important;
+    transition: background-color 0.3s;
+  }
+  
+  /* Estilo para el switch de precios */
+  .form-check-label {
+    font-weight: bold;
+    color: #007bff;
+  }
+  .form-check {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  .form-check-input {
+    cursor: pointer;
+  }
+  
+  /* Responsividad de la tabla */
+  @media (max-width: 768px) {
+    table {
+      font-size: 0.9rem;
+    }
+  
+    th, td {
+      padding: 10px;
+    }
+  }
+  .navbar-nav .nav-link {
+    font-size: 1.2rem;  
+    padding: 15px 20px; 
+  }
+  .navbar-brand img {
+    width: 50px; 
+  }
+  .navbar {
+    padding: 15px 0;  
+  }
+  .navbar-nav .nav-link.active {
+    font-size: 1.3rem;  
+    font-weight: bold;  
+  }
+  .newsletter {
+    text-align: center;
+    margin: 0 auto;
+  }
+  
+  .newsletter input[type="email"],
+  .newsletter button {
+    margin: 0.5rem;
+  }

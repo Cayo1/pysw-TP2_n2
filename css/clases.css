@@ -1,0 +1,33 @@
+/* Estilos para los enlaces de navegación */
+.navbar-nav .nav-link {
+    font-size: 1.2rem;  /* Tamaño de fuente de los enlaces */
+    padding: 15px 20px; /* Espaciado interno de los enlaces */
+}
+
+/* Estilos para la imagen del logo en la barra de navegación */
+.navbar-brand img {
+    width: 50px;  /* Ancho del logo */
+}
+
+/* Estilos para la barra de navegación */
+.navbar {
+    padding: 15px 0;  /* Espaciado superior e inferior de la barra de navegación */
+}
+
+/* Estilos para los enlaces activos en la barra de navegación */
+.navbar-nav .nav-link.active {
+    font-size: 1.3rem;  /* Tamaño de fuente mayor para los enlaces activos */
+    font-weight: bold;  /* Negrita para los enlaces activos */
+}
+
+/* Estilos para el formulario de suscripción al newsletter */
+.newsletter {
+    text-align: center;  /* Centra el formulario */
+    margin: 0 auto;  /* Centra el formulario en la página */
+}
+
+/* Estilos para los campos de entrada y botón dentro del formulario */
+.newsletter input[type="email"],
+.newsletter button {
+    margin: 0.5rem;  /* Espaciado alrededor de los campos de entrada y el botón */
+}

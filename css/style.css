@@ -1,0 +1,208 @@
+/* Estilo para el mega menú, que se despliega en pantallas grandes */
+.mega-menu {
+  width: 100vw; /* Ancho completo de la pantalla */
+  left: 0;
+  right: 0;
+  top: 100%;
+  display: none; /* Inicialmente oculto */
+  border: none;
+  border-radius: 0;
+  background-color: #fff;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+  z-index: 1000; /* Asegura que esté por encima de otros elementos */
+}
+
+/* Mostrar el mega menú al pasar el ratón sobre el menú en pantallas grandes */
+@media (min-width: 992px) {
+  .navbar .dropdown:hover > .mega-menu {
+      display: block; /* Muestra el mega menú */
+  }
+}
+
+/* Estilo de los títulos dentro del mega menú */
+.mega-menu h6 {
+  font-weight: bold;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Estilo para el menú desplegable */
+.dropdown-menu {
+  min-width: 100px; /* Ancho mínimo del menú desplegable */
+}
+
+/* Estilo de los elementos dentro del menú desplegable */
+.dropdown-menu .dropdown-item {
+  text-align: center;
+  padding: 10px 15px; /* Espaciado interno de los ítems */
+}
+
+/* Sección Hero con video de fondo */
+.hero {
+  height: 100vh; /* Altura completa de la ventana */
+  overflow: hidden; /* Evita el desbordamiento de contenido */
+}
+
+/* Estilo para el video de fondo */
+.hero video {
+  object-fit: cover; /* Hace que el video cubra toda el área */
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* Estilo de la capa de superposición en la sección Hero */
+.hero .overlay {
+  background: rgba(0, 0, 0, 0.6); /* Fondo oscuro semi-transparente */
+  z-index: 2;
+  display: none; /* Inicialmente oculto */
+}
+
+/* Estilo para el título principal de la sección Hero */
+.hero-title {
+  color: #ffc107; /* Color amarillo */
+  text-shadow: 2px 2px 8px #000; /* Sombra para destacar el texto */
+}
+
+/* Estilo para el subtítulo de la sección Hero */
+.hero-subtitle {
+  color: #fff; /* Color blanco */
+}
+
+/* Estilo del botón en la sección Hero */
+.btn-hero {
+  background-color: #e74c3c; /* Fondo rojo */
+  color: #fff; /* Texto blanco */
+  border: none;
+}
+
+/* Efecto hover en el botón */
+.btn-hero:hover {
+  background-color: #c0392b; /* Fondo más oscuro al pasar el ratón */
+}
+
+/* Estilo para las tarjetas de las clases */
+.clase-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efecto de transición */
+  border: 2px solid #ffc107; /* Borde amarillo */
+}
+
+/* Efecto hover en las tarjetas */
+.clase-card:hover {
+  box-shadow: 0 8px 24px rgba(255, 193, 7, 0.4); /* Sombra al pasar el ratón */
+}
+
+/* Estilo del bloque de testimonios en el carousel */
+.carousel-item blockquote {
+  font-size: 1.2rem; /* Tamaño de fuente */
+  color: #222; /* Color gris oscuro */
+  background: #f9f9f9; /* Fondo gris claro */
+  border-left: 5px solid #e74c3c; /* Borde rojo a la izquierda */
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 700px; /* Ancho máximo */
+}
+
+/* Estilo para el pie de cada testimonio */
+.blockquote-footer {
+  margin-top: 10px;
+  color: #666; /* Color gris para el pie */
+  font-style: italic; /* Estilo en cursiva */
+}
+
+/* Estilo para los botones de navegación del carousel */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #ffc107; /* Fondo amarillo */
+  border-radius: 50%; /* Forma circular */
+  padding: 20px;
+  background-size: 70% 70%; /* Tamaño del ícono */
+  filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(0%) contrast(100%); /* Filtros para el ícono */
+}
+
+/* Efecto hover en los botones de navegación del carousel */
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+  background-color: #e0a800; /* Fondo más oscuro al pasar el ratón */
+  transform: scale(1.1); /* Aumento de tamaño */
+  transition: all 0.3s ease; /* Transición suave */
+}
+
+/* Estilo para los botones de filtro activos */
+.filter-btn.active {
+  background-color: #ffc107; /* Fondo amarillo para los botones activos */
+  color: #000; /* Texto negro */
+}
+
+/* Estilo para el contenedor de clases con grid */
+#clasesContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); /* Disposición flexible de las tarjetas */
+  gap: 1.5rem; /* Espaciado entre las tarjetas */
+}
+
+/* Estilos para dispositivos con pantallas pequeñas */
+@media (max-width: 576px) {
+  /* Estilo para el título de las tarjetas */
+  .card .card-title {
+      font-size: 1.2rem; /* Aumenta el tamaño del título */
+  }
+
+  /* Estilo para el texto de las tarjetas */
+  .card .card-text {
+      font-size: 0.9rem; /* Disminuye el tamaño del texto */
+  }
+}
+
+/* Estilo para las celdas de la tabla */
+table th, table td {
+  text-align: center; /* Centra el contenido */
+  vertical-align: middle; /* Alineación vertical al centro */
+}
+
+/* Animación de zoom y desvanecimiento */
+@keyframes zoomInFade {
+  0% {
+      opacity: 0; /* Comienza invisible */
+      transform: scale(0.9); /* Comienza con un tamaño más pequeño */
+  }
+  100% {
+      opacity: 1; /* Termina completamente visible */
+      transform: scale(1); /* Escala normal */
+  }
+}
+
+/* Estilo del formulario de suscripción */
+.newsletter {
+  text-align: center; /* Centra el formulario */
+  margin: 0 auto; /* Centra el formulario en la página */
+}
+
+/* Estilo para los elementos del formulario */
+.newsletter input[type="email"],
+.newsletter button {
+  margin: 0.5rem; /* Espaciado entre los elementos */
+}
+
+/* Estilo para aumentar el tamaño del texto del menú */
+.navbar-nav .nav-link {
+  font-size: 1.2rem; /* Aumenta el tamaño de la fuente */
+  padding: 15px 20px; /* Aumenta el espacio entre los enlaces */
+}
+
+/* Estilo para el logo del menú */
+.navbar-brand img {
+  width: 50px; /* Cambia el tamaño del logo */
+}
+
+/* Estilo para la barra de navegación */
+.navbar {
+  padding: 15px 0; /* Aumenta la altura de la barra de navegación */
+}
+
+/* Estilo para el enlace activo del menú */
+.navbar-nav .nav-link.active {
+  font-size: 1.3rem; /* Aumenta el tamaño de la fuente del enlace activo */
+  font-weight: bold; /* Pone en negrita el enlace activo */
+}

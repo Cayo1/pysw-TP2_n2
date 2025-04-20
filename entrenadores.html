@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Entrenadores - Fuerza Total</title>
+  <!-- Vincula Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Vincula Font Awesome para íconos -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <!-- Vincula el archivo CSS personalizado -->
+  <link rel="stylesheet" href="css/entrenadores.css">
+</head>
+<body>
+    <header>
+        <!-- Barra de navegación -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <img src="img/logo.jpg" alt="Fuerza Total" style="width: 60px; margin-right: 30px;">
+                <a class="navbar-brand" href="index.html">Fuerza Total</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav ms-auto">
+                    <!-- Enlaces de navegación -->
+                    <li class="nav-item">
+                      <a class="nav-link active" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a href="clases.html" class="nav-link dropdown-toggle" id="clasesDropdown" data-bs-toggle="dropdown" role="button" aria-expanded="false">Clases</a>
+                      <!-- Menú desplegable de clases -->
+                      <ul class="dropdown-menu mega-menu p-4" aria-labelledby="clasesDropdown">
+                        <li><a class="dropdown-item" href="clases.html">Musculación</a></li>
+                        <li><a class="dropdown-item" href="clases.html">CrossFit</a></li>
+                        <li><a class="dropdown-item" href="clases.html">Yoga</a></li>
+                        <li><a class="dropdown-item" href="clases.html">Spinning</a></li>
+                      </ul>
+                    </li>     
+                    <li class="nav-item">
+                      <a class="nav-link" href="entrenadores.html">Entrenadores</a>
+                    </li>             
+                    <li class="nav-item">
+                      <a class="nav-link" href="precios.html">Precios</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                  </ul>
+                </div>
+            </div>
+        </nav>   
+    </header>      
+    
+    <main class="clases-destacadas">
+        <h2>Conocé a nuestros entrenadores</h2>
+        <div class="cards">
+            <!-- Tarjeta de entrenador 1 -->
+            <div class="card-flip">
+              <div class="card-inner">
+                <div class="card-front">
+                  <img src="img/entrenadorM.jpg" alt="Juan Peréz">
+                  <h3>Martín Pérez</h3>
+                  <p>Musculación y nutrición</p>
+                </div>
+                <div class="card-back">
+                  <p>Fuerza</p>
+                  <div class="barra">
+                    <div class="progreso fuerza" data-porcentaje="80%"></div>
+                  </div>
+                  <p>Nutrición</p>
+                  <div class="barra">
+                    <div class="progreso nutricion" data-porcentaje="70%"></div>
+                  </div>
+                  <!-- Estrellas de calificación -->
+                  <div class="estrellas" data-rating="4">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-alt"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tarjeta de entrenador 2 -->
+            <div class="cards">
+                <div class="card-flip">
+                  <div class="card-inner">
+                    <div class="card-front">
+                      <img src="img/entrenadorY.jpg" alt="Juan Peréz">
+                      <h3>Lucía Aguirre</h3>
+                      <p>Yoga</p>
+                    </div>
+                    <div class="card-back">
+                      <p>Flexibilidad</p>
+                      <div class="barra">
+                        <div class="progreso fuerza" data-porcentaje="90%"></div>
+                      </div>
+                      <p>Equilibrio</p>
+                      <div class="barra">
+                        <div class="progreso nutricion" data-porcentaje="80%"></div>
+                      </div>
+                      <!-- Estrellas de calificación -->
+                      <div class="estrellas" data-rating="5">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Tarjeta de entrenador 3 -->
+                <div class="cards">
+                    <div class="card-flip">
+                      <div class="card-inner">
+                        <div class="card-front">
+                          <img src="img/entrenadorC.jpg" alt="Juan Peréz">
+                          <h3>Esteban Ríos</h3>
+                          <p>CrossFit</p>
+                        </div>
+                        <div class="card-back">
+                          <p>Resistencia</p>
+                          <div class="barra">
+                            <div class="progreso fuerza" data-porcentaje="100%"></div>
+                          </div>
+                          <p>Potencia</p>
+                          <div class="barra">
+                            <div class="progreso nutricion" data-porcentaje="90%"></div>
+                          </div>
+                          <!-- Estrellas de calificación -->
+                          <div class="estrellas" data-rating="4">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half-alt"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Tarjeta de entrenador 4 -->
+                    <div class="cards">
+                        <div class="card-flip">
+                          <div class="card-inner">
+                            <div class="card-front">
+                              <img src="img/entrenadorS.jpg" alt="Juan Peréz">
+                              <h3>María Pérez</h3>
+                              <p>Spinning</p>
+                            </div>
+                            <div class="card-back">
+                              <p>Cardio</p>
+                              <div class="barra">
+                                <div class="progreso fuerza" data-porcentaje="100%"></div>
+                              </div>
+                              <p>Velocidad</p>
+                              <div class="barra">
+                                <div class="progreso nutricion" data-porcentaje="100%"></div>
+                              </div>
+                              <!-- Estrellas de calificación -->
+                              <div class="estrellas" data-rating="5">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+  <!-- Scripts para jQuery y Bootstrap -->
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Vincula el archivo JS personalizado -->
+  <script src="js/entrenadores.js"></script>
+
+  <!-- Pie de página -->
+  <footer class="bg-dark text-white py-5">
+    <div class="container">
+        <h3 class="text-center mb-4">Suscribite a nuestro newsletter</h3>
+        <!-- Formulario de suscripción al newsletter -->
+        <form id="newsletterForm" class="newsletter">
+          <label for="email">Suscribite al newsletter:</label>
+          <input type="email" id="email" name="email" required>
+          <button id="submitBtn" type="submit">Enviar</button>
+          <div id="newsletterSpinner" class="spinner-border text-primary ms-2 d-none" role="status" style="width: 1.5rem; height: 1.5rem;">
+            <span class="visually-hidden">Loading...</span>
+          </div>
+        </form>
+        
+        <!-- Mapa de ubicación -->
+        <div class="mt-5">
+          <h4 class="mb-3 text-center">Ubicación</h4>
+          <div class="ratio ratio-16x9">
+            <iframe src="https://www.google.com/maps/embed?pb=..." width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+    </div>
+  </footer>
+</body>
+</html>

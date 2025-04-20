@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Contacto - Fuerza Total</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/contacto.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <img src="img/logo.jpg" alt="Fuerza Total" style="width: 60px; margin-right: 30px;">
+              <a class="navbar-brand" href="index.html">Fuerza Total</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+          
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                    <a class="nav-link active" href="index.html">Inicio</a>
+                  </li>
+                  
+                  <li class="nav-item dropdown">
+                    <a href="clases.html" class="nav-link dropdown-toggle" id="clasesDropdown" data-bs-toggle="dropdown" role="button" aria-expanded="false">clases</a>
+
+                    <ul class="dropdown-menu mega-menu p-4" aria-labelledby="clasesDropdown">
+                      <li><a class="dropdown-item" href="clases.html">Musculación</a></li>
+                      <li><a class="dropdown-item" href="clases.html">CrossFit</a></li>
+                      <li><a class="dropdown-item" href="clases.html">Yoga</a></li>
+                      <li><a class="dropdown-item" href="clases.html">Spinning</a></li>
+                    </ul>
+                  </li>     
+                  <li class="nav-item">
+                    <a class="nav-link" href="entrenadores.html">Entrenadores</a>
+                  </li>             
+                  <li class="nav-item">
+                    <a class="nav-link" href="precios.html">Precios</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contacto.html">Contacto</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="blog.html">Blog</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          
+      </header>      
+<div class="container py-5">
+  <h2 class="text-center mb-4">Contacto Avanzado</h2>
+  <form id="form-contacto" novalidate>
+    <div class="mb-3">
+      <label for="nombre" class="form-label">Nombre</label>
+      <input type="text" class="form-control" id="nombre" required>
+      <div class="invalid-feedback">El nombre es obligatorio.</div>
+    </div>
+
+    <div class="mb-3">
+      <label for="email" class="form-label">Correo electrónico</label>
+      <input type="email" class="form-control" id="email" required>
+      <div class="invalid-feedback">Email inválido.</div>
+    </div>
+
+    <div class="mb-3">
+      <label for="mensaje" class="form-label">Mensaje</label>
+      <textarea class="form-control" id="mensaje" rows="4" required></textarea>
+      <div class="invalid-feedback">Escribí tu mensaje.</div>
+    </div>
+
+    <button type="submit" class="btn btn-primary w-100">Enviar</button>
+
+    <!-- Spinner oculto -->
+    <div id="spinner" class="text-center mt-3" style="display: none;">
+      <div class="spinner-border text-primary" role="status">
+        <span class="visually-hidden">Cargando...</span>
+      </div>
+    </div>
+  </form>
+</div>
+
+<!-- Modal de confirmación -->
+<div class="modal fade" id="modalConfirmacion" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Mensaje enviado</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        ¡Gracias por contactarte con nosotros!
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Bootstrap JS + jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/contacto.js"></script>
+<footer class="bg-dark text-white py-5">
+    <div class="container">
+        <h3 class="text-center mb-4">Suscribite a nuestro newsletter</h3>
+        <form id="newsletterForm" class="newsletter">
+          <label for="email">Suscribite al newsletter:</label>
+          <input type="email" id="email2" name="email" required>
+          <button id="submitBtn" type="submit">Enviar</button>
+          <div id="newsletterSpinner" class="spinner-border text-primary ms-2 d-none" role="status" style="width: 1.5rem; height: 1.5rem;">
+            <span class="visually-hidden">Loading...</span>
+          </div>
+        </form>
+        
+          
+          
+      <div class="mt-5">
+        <h4 class="mb-3 text-center">Ubicación</h4>
+        <div class="ratio ratio-16x9">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d119675.40569064053!2d-102.60862240273437!3d20.388808699999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842ec7003902cd0d%3A0x9852a136d58996ff!2sFuerza%20Total!5e0!3m2!1ses!2sar!4v1745024681543!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
